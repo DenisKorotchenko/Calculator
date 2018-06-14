@@ -38,7 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/result"
-        android:text="+" />
+        android:text="+"
+        />
 
     <Button
         android:id="@+id/minus"
