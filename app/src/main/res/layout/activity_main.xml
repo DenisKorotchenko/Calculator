@@ -5,71 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/second"
-        android:hint="Second argument"
-        android:layout_width="199dp"
-        android:inputType="number"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true" />
-
-    <EditText
-        android:id="@+id/first"
-        android:hint="First argument"
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:inputType="number"
-        android:layout_alignParentTop="true" />
-
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="39dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/first" />
+    tools:context=".MainActivity"
+    android:weightSum="10"
+    >
 
     <Button
-        android:id="@+id/plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/result"
-        android:text="+"
+        android:layout_weight="3"
         />
 
     <Button
-        android:id="@+id/minus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/result"
-        android:layout_toEndOf="@+id/plus"
-        android:text="-"/>
+        android:layout_weight="4"/>
 
     <Button
-        android:id="@+id/multi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/result"
-        android:layout_toStartOf="@+id/divint"
-        android:text="*" />
+        android:layout_weight="1"/>
 
-    <Button
-        android:id="@+id/divint"
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/result"
-        android:text="/ (int)" />
+        android:src="@mipmap/ic_launcher_round"
 
-    <Button
-        android:id="@+id/fractdiv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/plus"
-        android:text="/ (not int)" />
+        />
+
+
+
+
 </RelativeLayout>
